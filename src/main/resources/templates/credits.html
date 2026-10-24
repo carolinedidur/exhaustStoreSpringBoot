@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="~{fragments :: head('Photo credits & sources')}"></head>
+  <body>
+    <header th:replace="~{fragments :: header}"></header>
+    <main id="main" class="container credits-page">
+      <div class="page-heading">
+        <h1>Credits &amp; catalog sources.</h1>
+        <p>A little credit for the people behind the pictures.</p>
+      </div>
+      <h2>Landing photograph</h2>
+      <p th:text="${heroCredit}"></p>
+      <a
+        class="text-link"
+        th:if="${heroSource != ''}"
+        th:href="${heroSource}"
+        target="_blank"
+        rel="noopener noreferrer"
+        >View the original photograph ↗</a
+      >
+      <h2>Product photography &amp; reference prices</h2>
+      <p>
+        Product images belong to their respective owners. Source links are
+        provided for this educational demo. Prices are illustrative GEL amounts
+        based on reference USD prices using a fixed factor of 2.75, rounded to
+        the nearest 5 GEL. This is not a live exchange rate or a commercial
+        offer.
+      </p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Reference</th>
+              <th>Product</th>
+              <th>Photo credit / source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr th:each="product : ${products}">
+              <td th:text="${product.sku}"></td>
+              <td th:text="${product.title}"></td>
+              <td>
+                <a
+                  th:if="${product.sourceUrl != ''}"
+                  th:href="${product.sourceUrl}"
+                  th:text="${product.imageCredit != '' ? product.imageCredit : 'Original source'}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ></a
+                ><span
+                  th:if="${product.sourceUrl == ''}"
+                  th:text="${product.imageCredit}"
+                ></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer th:replace="~{fragments :: footer}"></footer>
+  </body>
+</html>

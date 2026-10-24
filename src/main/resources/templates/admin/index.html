@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="~{fragments :: head('Manage listings')}"></head>
+  <body class="admin-body">
+    <div class="admin-shell">
+      <aside th:replace="~{fragments :: adminNav}"></aside>
+      <main id="main" class="admin-main">
+        <div class="admin-title">
+          <div>
+            <h1>Listings &amp; stock</h1>
+            <p>
+              Keep the shelf in tune. Changes appear on the storefront
+              immediately.
+            </p>
+          </div>
+          <a class="button" th:href="@{/admin/listings/new}">+ Add listing</a>
+        </div>
+        <div th:replace="~{fragments :: flash}"></div>
+        <div class="admin-stats">
+          <div>
+            <span>Total listings</span><strong th:text="${total}"></strong>
+          </div>
+          <div>
+            <span>Published</span><strong th:text="${visibleCount}"></strong>
+          </div>
+          <div>
+            <span>Out of stock</span><strong th:text="${soldOutCount}"></strong>
+          </div>
+        </div>
+        <form th:action="@{/admin}" method="get" class="admin-toolbar">
+          <label class="search-field"
+            ><span class="sr-only">Search listings</span
+            ><input
+              type="search"
+              name="q"
+              th:value="${q}"
+              placeholder="Search name, brand or SKU"
+            /><button type="submit" aria-label="Search">→</button></label
+          ><label class="sort-field"
+            >Show<select name="state" data-auto-submit>
+              <option value="all" th:selected="${state == 'all'}">
+                All listings
+              </option>
+              <option value="published" th:selected="${state == 'published'}">
+                Published
+              </option>
+              <option value="hidden" th:selected="${state == 'hidden'}">
+                Hidden
+              </option>
+              <option
+                value="out-of-stock"
+                th:selected="${state == 'out-of-stock'}"
+              >
+                Out of stock
+              </option>
+            </select></label
+          ><span th:text="${products.size()} + ' listings'"></span
+          ><noscript><button type="submit">Filter</button></noscript>
+        </form>
+        <div class="table-scroll admin-table-wrap">
+          <table class="admin-table">
+            <caption class="sr-only">
+              Listings and stock at both pickup points
+            </caption>
+            <thead>
+              <tr>
+                <th>Listing</th>
+                <th class="num">Price, GEL</th>
+                <th class="num">Goodwill</th>
+                <th class="num">Grmagele</th>
+                <th>Visibility</th>
+                <th><span class="sr-only">Actions</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr th:each="product : ${products}">
+                <td>
+                  <div class="table-product">
+                    <img
+                      th:src="${product.imagePath}"
+                      th:alt="${product.title}"
+                      width="64"
+                      height="50"
+                      loading="lazy"
+                    />
+                    <div>
+                      <a
+                        th:href="@{/admin/listings/{id}/edit(id=${product.id})}"
+                        th:text="${product.title}"
+                      ></a
+                      ><span
+                        th:text="${product.sku} + ' · ' + ${product.fitmentSummary()}"
+                      ></span>
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="num"
+                  th:text="${#numbers.formatDecimal(product.price(),1,'COMMA',2,'POINT')}"
+                ></td>
+                <td class="num" th:text="${product.stockGoodwill}"></td>
+                <td class="num" th:text="${product.stockGrmagele}"></td>
+                <td>
+                  <form
+                    th:action="@{/admin/listings/{id}/visibility(id=${product.id})}"
+                    method="post"
+                  >
+                    <button
+                      type="submit"
+                      class="visibility-button"
+                      th:classappend="${!product.published} ? 'hidden-state'"
+                      th:text="${product.published ? 'Published' : 'Hidden'}"
+                      th:attr="aria-label=${(product.published ? 'Hide ' : 'Publish ') + product.title}"
+                    ></button>
+                  </form>
+                </td>
+                <td class="row-actions">
+                  <a th:href="@{/admin/listings/{id}/edit(id=${product.id})}"
+                    >Edit</a
+                  ><a
+                    class="delete-link"
+                    th:href="@{/admin/listings/{id}/delete(id=${product.id})}"
+                    th:attr="aria-label=${'Delete ' + product.title}"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="empty-state" th:if="${products.isEmpty()}">
+            <h2>No listings found.</h2>
+            <p>Try another search or add your first part.</p>
+            <a class="text-link" th:href="@{/admin}">Clear filters</a>
+          </div>
+        </div>
+        <p class="small-note">
+          Click Published or Hidden to change storefront visibility. Stock is
+          managed separately for each pickup point.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

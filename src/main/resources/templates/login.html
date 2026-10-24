@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="~{fragments :: head('Admin sign in')}"></head>
+  <body>
+    <header th:replace="~{fragments :: header}"></header>
+    <main id="main" class="login-page container">
+      <div class="login-intro">
+        <h1>Behind<br />the sound.</h1>
+        <p>Keep the parts shelf stocked and the storefront looking sharp.</p>
+        <a class="text-link" th:href="@{/}">← Back to the storefront</a>
+      </div>
+      <section class="login-card">
+        <h2>Admin sign in</h2>
+        <p>Manage listings, stock, and the landing page.</p>
+        <p class="notice error" role="alert" th:if="${param.error}">
+          The username or password is incorrect.
+        </p>
+        <p class="notice success" role="status" th:if="${param.logout}">
+          You’ve signed out.
+        </p>
+        <form th:action="@{/login}" method="post">
+          <label
+            >Username<input
+              name="username"
+              autocomplete="username"
+              required
+              autofocus /></label
+          ><label
+            >Password<input
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required /></label
+          ><button class="button" type="submit">
+            Sign in <svg class="icon"><use href="#arrow" /></svg>
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer th:replace="~{fragments :: footer}"></footer>
+  </body>
+</html>

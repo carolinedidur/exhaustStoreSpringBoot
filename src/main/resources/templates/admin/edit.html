@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head
+    th:replace="~{fragments :: head(${listingId == 0 ? 'Add listing' : 'Edit listing'})}"
+  ></head>
+  <body class="admin-body">
+    <div class="admin-shell">
+      <aside th:replace="~{fragments :: adminNav}"></aside>
+      <main id="main" class="admin-main editor-main">
+        <a class="back-link" th:href="@{/admin}">← All listings</a>
+        <div class="admin-title">
+          <div>
+            <h1
+              th:text="${listingId == 0 ? 'Add a listing' : 'Edit listing'}"
+            ></h1>
+            <p>Product details, compatible cars, and stock in one place.</p>
+          </div>
+          <a
+            class="text-link"
+            th:if="${listingId != 0}"
+            th:href="@{/listings/{id}(id=${listingId})}"
+            >View listing ↗</a
+          >
+        </div>
+        <div th:replace="~{fragments :: flash}"></div>
+        <form
+          th:action="@{/admin/listings/save}"
+          method="post"
+          enctype="multipart/form-data"
+          th:object="${form}"
+          class="editor-form"
+        >
+          <input type="hidden" name="id" th:value="${listingId}" />
+          <div
+            class="notice error"
+            role="alert"
+            th:if="${#fields.hasAnyErrors()}"
+          >
+            <strong>Please check the highlighted fields.</strong>
+            <ul>
+              <li
+                th:each="error : ${#fields.globalErrors()}"
+                th:text="${error}"
+              ></li>
+            </ul>
+          </div>
+          <div class="editor-columns">
+            <div>
+              <section class="form-section">
+                <h2>Part details</h2>
+                <div class="form-grid">
+                  <label class="span-two"
+                    >Listing title<input
+                      th:field="*{title}"
+                      maxlength="100"
+                      required /><span
+                      class="field-error"
+                      th:errors="*{title}"
+                    ></span></label
+                  ><label
+                    >SKU / reference<input
+                      th:field="*{sku}"
+                      maxlength="40"
+                      placeholder="e.g. EXT-037"
+                      required /><span
+                      class="field-error"
+                      th:errors="*{sku}"
+                    ></span></label
+                  ><label
+                    >Brand<input
+                      th:field="*{brand}"
+                      maxlength="60"
+                      required /><span
+                      class="field-error"
+                      th:errors="*{brand}"
+                    ></span></label
+                  ><label
+                    >Part type<select th:field="*{category}">
+                      <option
+                        th:each="category : ${adminCategories}"
+                        th:value="${category}"
+                        th:text="${category}"
+                      ></option></select
+                    ><span
+                      class="field-error"
+                      th:errors="*{category}"
+                    ></span></label
+                  ><label
+                    >Material<input
+                      th:field="*{material}"
+                      maxlength="100"
+                      required /><span
+                      class="field-error"
+                      th:errors="*{material}"
+                    ></span></label
+                  ><label class="span-two"
+                    >Description<textarea
+                      th:field="*{description}"
+                      rows="5"
+                      maxlength="3000"
+                      required
+                    ></textarea
+                    ><span class="field-error" th:errors="*{description}"></span
+                  ></label>
+                </div>
+              </section>
+              <section class="form-section">
+                <h2>Compatible cars</h2>
+                <p>Add one car per line, separated by the | character.</p>
+                <label
+                  >Make | Model | From year | To year | Engine<textarea
+                    th:field="*{compatibility}"
+                    rows="5"
+                    placeholder="BMW | M4 (G82) | 2021 | 2026 | 3.0 S58"
+                    required
+                  ></textarea
+                  ><span class="field-error" th:errors="*{compatibility}"></span
+                ></label>
+                <p class="field-help">
+                  Example: BMW | M4 (G82) | 2021 | 2026 | 3.0 S58<br />Engine is
+                  optional. Use consistent makes and model names so filters
+                  group them together.
+                </p>
+              </section>
+              <section class="form-section">
+                <h2>Photo &amp; sources</h2>
+                <label
+                  >Product photo<input
+                    type="file"
+                    name="image"
+                    accept="image/jpeg,image/png"
+                    data-image-input
+                  /><span class="field-help"
+                    >JPG or PNG, up to 5 MB and 24 megapixels. Leave empty to
+                    keep the current photo.</span
+                  ></label
+                >
+                <div class="form-grid">
+                  <label
+                    >Photo credit<input
+                      th:field="*{imageCredit}"
+                      maxlength="200" /><span
+                      class="field-error"
+                      th:errors="*{imageCredit}"
+                    ></span></label
+                  ><label
+                    >Original source link<input
+                      type="url"
+                      th:field="*{sourceUrl}"
+                      placeholder="https://…"
+                      maxlength="1000" /><span
+                      class="field-error"
+                      th:errors="*{sourceUrl}"
+                    ></span
+                  ></label>
+                </div>
+              </section>
+            </div>
+            <div class="editor-side">
+              <section class="form-section">
+                <h2>Photo preview</h2>
+                <img
+                  class="admin-image-preview"
+                  th:src="${currentImage}"
+                  alt="Current product photo"
+                  data-image-preview
+                  width="500"
+                  height="360"
+                />
+              </section>
+              <section class="form-section">
+                <h2>Price &amp; stock</h2>
+                <label
+                  >Price in GEL (₾)<input
+                    th:field="*{price}"
+                    type="number"
+                    step="0.01"
+                    min="0.01"
+                    max="999999.99"
+                    required /><span
+                    class="field-error"
+                    th:errors="*{price}"
+                  ></span></label
+                ><label
+                  >Goodwill quantity<input
+                    th:field="*{stockGoodwill}"
+                    type="number"
+                    min="0"
+                    max="9999"
+                    required /><span
+                    class="field-error"
+                    th:errors="*{stockGoodwill}"
+                  ></span></label
+                ><label
+                  >Grmagele quantity<input
+                    th:field="*{stockGrmagele}"
+                    type="number"
+                    min="0"
+                    max="9999"
+                    required /><span
+                    class="field-error"
+                    th:errors="*{stockGrmagele}"
+                  ></span
+                ></label>
+                <p class="field-help">
+                  Set both quantities to 0 to show “Out of stock”.
+                </p>
+              </section>
+              <section class="form-section">
+                <h2>Storefront visibility</h2>
+                <label class="checkbox-label"
+                  ><input type="checkbox" th:field="*{published}" />Published on
+                  the storefront</label
+                ><label class="checkbox-label"
+                  ><input type="checkbox" th:field="*{featured}" />Feature on
+                  the home page</label
+                >
+                <p class="field-help">
+                  The home page displays up to four featured listings. Hidden
+                  listings never appear to visitors.
+                </p>
+              </section>
+            </div>
+          </div>
+          <div class="form-actions">
+            <a class="button button-outline" th:href="@{/admin}">Cancel</a
+            ><button class="button" type="submit">Save listing →</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

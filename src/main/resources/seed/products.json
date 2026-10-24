@@ -1,0 +1,1176 @@
+[
+  {
+    "id": 0,
+    "sku": "EXT-001",
+    "title": "Valved axle-back exhaust",
+    "brand": "Active Autowerke",
+    "category": "Axle-back exhausts",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (G82)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (G80)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "A deeper soundtrack for the S58, with valves to adjust the exhaust note. Rear exhaust section; choose the correct tip arrangement before fitting.",
+    "material": "Stainless steel",
+    "priceCents": 687000,
+    "imagePath": "/images/products/01.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/g80-m3-and-g82-m4-valved-rear-axle-back-exhaust",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 2,
+    "stockGrmagele": 1,
+    "published": true,
+    "featured": true
+  },
+  {
+    "id": 0,
+    "sku": "EXT-002",
+    "title": "Gen 2 equal-length midpipe",
+    "brand": "Active Autowerke",
+    "category": "Midpipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (G82)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (G80)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "Equal-length routing balances the S58 exhaust pulses. Includes the matching G-brace; installation requires cutting the original exhaust at the specified points.",
+    "material": "Stainless steel",
+    "priceCents": 494500,
+    "imagePath": "/images/products/02.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-g80-g82-m3-m4-equal-length-mid-pipe-with-g-brace-and-90-fixed-price-shipping-in-lower-48-states",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 1,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": true
+  },
+  {
+    "id": 0,
+    "sku": "EXT-003",
+    "title": "Brushed quad exhaust tips",
+    "brand": "Active Autowerke",
+    "category": "Exhaust tips",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (G82)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (G80)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M2 (G87)",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "A set of brushed finish tailpipe trims for an Active Autowerke rear exhaust. Check outlet diameter and diffuser clearance before installation.",
+    "material": "Stainless steel",
+    "priceCents": 109500,
+    "imagePath": "/images/products/03.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/g8x-bmw-m3-m4-rear-exhaust-tips-for-active-exhausts",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 4,
+    "stockGrmagele": 3,
+    "published": true,
+    "featured": true
+  },
+  {
+    "id": 0,
+    "sku": "EXT-004",
+    "title": "Supra performance cat-back",
+    "brand": "Active Autowerke",
+    "category": "Cat-back systems",
+    "fitments": [
+      {
+        "make": "Toyota",
+        "model": "GR Supra 3.0 (A90)",
+        "yearFrom": 2020,
+        "yearTo": 2026,
+        "engine": "3.0 B58"
+      }
+    ],
+    "description": "A complete rear exhaust upgrade for the 3.0-litre GR Supra, with stainless pipework and a clean twin-outlet finish.",
+    "material": "Stainless steel",
+    "priceCents": 604500,
+    "imagePath": "/images/products/04.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/supra-performance-rear-exhaust-by-active-autowerke",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 0,
+    "stockGrmagele": 2,
+    "published": true,
+    "featured": true
+  },
+  {
+    "id": 0,
+    "sku": "EXT-005",
+    "title": "M2 valved axle-back",
+    "brand": "Active Autowerke",
+    "category": "Axle-back exhausts",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M2 (G87)",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "A valved rear section for the G87 M2. Adds a more pronounced exhaust note while retaining adjustable sound control.",
+    "material": "Stainless steel",
+    "priceCents": 687000,
+    "imagePath": "/images/products/05.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/g87-m2-valved-rear-axle-back-exhaust",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 2,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-006",
+    "title": "M2 equal-length midpipe",
+    "brand": "Active Autowerke",
+    "category": "Midpipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M2 (G87)",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "Gen 2 equal-length midpipe for the G87 S58 platform. Match with the specified brace and connecting hardware.",
+    "material": "Stainless steel",
+    "priceCents": 494500,
+    "imagePath": "/images/products/06.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-g87-m2-signature-equal-length-mid-pipe-us-patent-11248511-uk-and-eu-patent-3882441-with-g-brace-and-90-fixed-price-shipping-in-lower-48-states",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 0,
+    "stockGrmagele": 1,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-007",
+    "title": "Signature X-pipe midpipe",
+    "brand": "Active Autowerke",
+    "category": "Midpipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (G82)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (G80)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "A stainless mid-section with an X-pipe crossover. Designed for the G80/G82 platform and supplied in the base configuration.",
+    "material": "Stainless steel",
+    "priceCents": 412000,
+    "imagePath": "/images/products/07.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-g80-g82-m3-m4-signature-mid-pipe-with-x-pipe",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 1,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-008",
+    "title": "Single midpipe + G-brace",
+    "brand": "Active Autowerke",
+    "category": "Midpipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (G82)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (G80)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "Single-pipe centre section for the S58 platform. The matching brace adds clearance under the chassis.",
+    "material": "Stainless steel",
+    "priceCents": 329500,
+    "imagePath": "/images/products/08.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-g80-g82-m3-m4-sign",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 2,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-009",
+    "title": "S58 GESI catted downpipes",
+    "brand": "Active Autowerke",
+    "category": "Downpipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (G82)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (G80)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M2 (G87)",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "Replacement catted downpipes for the S58 engine. Confirm sensor connections, local requirements and the exact vehicle configuration with your installer.",
+    "material": "Stainless steel",
+    "priceCents": 824500,
+    "imagePath": "/images/products/09.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-bmw-s58-g80-m3-g82-m4-downpipes-w-gesi-cat",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 0,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-010",
+    "title": "Maad Maxx valved rear exhaust",
+    "brand": "Active Autowerke",
+    "category": "Axle-back exhausts",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (F82)",
+        "yearFrom": 2015,
+        "yearTo": 2020,
+        "engine": "3.0 S55"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (F80)",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "engine": "3.0 S55"
+      }
+    ],
+    "description": "Three-can valved rear section for the F8X platform. A replacement for the original rear muffler assembly.",
+    "material": "Stainless steel",
+    "priceCents": 687000,
+    "imagePath": "/images/products/10.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/mad-max-f8x-bmw-m3-m4-rear-exhaust-section-3-can-valved-1",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 1,
+    "stockGrmagele": 2,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-011",
+    "title": "F8X single midpipe + brace",
+    "brand": "Active Autowerke",
+    "category": "Midpipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (F82)",
+        "yearFrom": 2015,
+        "yearTo": 2020,
+        "engine": "3.0 S55"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (F80)",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "engine": "3.0 S55"
+      }
+    ],
+    "description": "Single centre-pipe assembly for S55-powered M3 and M4 models. Supplied with the matching F-brace.",
+    "material": "Stainless steel",
+    "priceCents": 219500,
+    "imagePath": "/images/products/11.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/f8x-bmw-m3-m4-mid-pipe",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 2,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-012",
+    "title": "F8X equal-length connecting pipes",
+    "brand": "Active Autowerke",
+    "category": "Connecting pipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (F82)",
+        "yearFrom": 2015,
+        "yearTo": 2020,
+        "engine": "3.0 S55"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (F80)",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "engine": "3.0 S55"
+      }
+    ],
+    "description": "Connecting sections for the Active Autowerke F8X equal-length midpipe. Match the connector configuration to the rest of the system.",
+    "material": "Stainless steel",
+    "priceCents": 82000,
+    "imagePath": "/images/products/12.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/resonated-pipes-for-f8x-bmw-m3-m4-equal-length-mid-pipe",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 3,
+    "stockGrmagele": 2,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-013",
+    "title": "F8X carbon exhaust tips",
+    "brand": "Active Autowerke",
+    "category": "Exhaust tips",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (F82)",
+        "yearFrom": 2015,
+        "yearTo": 2020,
+        "engine": "3.0 S55"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (F80)",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "engine": "3.0 S55"
+      }
+    ],
+    "description": "Carbon-finish tailpipe trims for Active Autowerke F8X rear exhausts. These are a finishing accessory, not a complete exhaust system.",
+    "material": "Stainless steel",
+    "priceCents": 82000,
+    "imagePath": "/images/products/13.png",
+    "sourceUrl": "https://store.activeautowerke.com/products/f8x-bmw-m3-m4-rear-exhaust-tips-for-active-exhausts",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 0,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-014",
+    "title": "M2 Competition valved axle-back",
+    "brand": "Active Autowerke",
+    "category": "Axle-back exhausts",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M2 Competition (F87)",
+        "yearFrom": 2019,
+        "yearTo": 2021,
+        "engine": "3.0 S55"
+      }
+    ],
+    "description": "Rear exhaust assembly for the S55-powered M2 Competition. Valved construction lets the exhaust note change with the valve position.",
+    "material": "Stainless steel",
+    "priceCents": 632000,
+    "imagePath": "/images/products/14.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/m2c-valved-rear-exhaust-f87-bmw-m2c-rear-exhaust-section",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 1,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-015",
+    "title": "M2 Competition midpipe",
+    "brand": "Active Autowerke",
+    "category": "Midpipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M2 Competition (F87)",
+        "yearFrom": 2019,
+        "yearTo": 2021,
+        "engine": "3.0 S55"
+      }
+    ],
+    "description": "A centre-section upgrade for the F87 M2 Competition, supplied with the Active F-brace.",
+    "material": "Stainless steel",
+    "priceCents": 219500,
+    "imagePath": "/images/products/15.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/f87-bmw-m2-competition-mid-pipe",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 2,
+    "stockGrmagele": 1,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-016",
+    "title": "M2 carbon exhaust tips",
+    "brand": "Active Autowerke",
+    "category": "Exhaust tips",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M2 Competition (F87)",
+        "yearFrom": 2019,
+        "yearTo": 2021,
+        "engine": "3.0 S55"
+      }
+    ],
+    "description": "Carbon-finish outlet trims for the matching Active Autowerke rear exhaust on the M2 and M2 Competition.",
+    "material": "Stainless steel",
+    "priceCents": 82000,
+    "imagePath": "/images/products/16.png",
+    "sourceUrl": "https://store.activeautowerke.com/products/f87-bmw-m2-and-m2c-rear-exhaust-tips-for-active-exhausts",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 4,
+    "stockGrmagele": 3,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-017",
+    "title": "B58 valved axle-back exhaust",
+    "brand": "Active Autowerke",
+    "category": "Axle-back exhausts",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M340i (G20)",
+        "yearFrom": 2020,
+        "yearTo": 2024,
+        "engine": "3.0 B58"
+      },
+      {
+        "make": "BMW",
+        "model": "M440i (G22)",
+        "yearFrom": 2021,
+        "yearTo": 2024,
+        "engine": "3.0 B58"
+      }
+    ],
+    "description": "A rear exhaust upgrade for the G20 M340i and G22 M440i. Stainless construction with valved outlets.",
+    "material": "Stainless steel",
+    "priceCents": 549500,
+    "imagePath": "/images/products/17.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/g2x-g3x-m340i-m440i-valved-rear-axle-back-exhaust",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 2,
+    "stockGrmagele": 1,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-018",
+    "title": "B58 midpipe + chassis brace",
+    "brand": "Active Autowerke",
+    "category": "Midpipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M340i (G20)",
+        "yearFrom": 2020,
+        "yearTo": 2024,
+        "engine": "3.0 B58"
+      },
+      {
+        "make": "BMW",
+        "model": "M440i (G22)",
+        "yearFrom": 2021,
+        "yearTo": 2024,
+        "engine": "3.0 B58"
+      }
+    ],
+    "description": "A matching centre section for the G2X B58 platform, with an Active brace for underbody clearance.",
+    "material": "Stainless steel",
+    "priceCents": 219500,
+    "imagePath": "/images/products/18.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/g2x-g3x-m340i-m440i-exhaust-midpipe",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 1,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-019",
+    "title": "B58 GESI catted downpipe",
+    "brand": "Active Autowerke",
+    "category": "Downpipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M340i (G20)",
+        "yearFrom": 2020,
+        "yearTo": 2024,
+        "engine": "3.0 B58"
+      },
+      {
+        "make": "BMW",
+        "model": "M440i (G22)",
+        "yearFrom": 2021,
+        "yearTo": 2024,
+        "engine": "3.0 B58"
+      }
+    ],
+    "description": "A catted turbo outlet pipe for pre-2025 G2X B58 applications. Check your engine revision and production date before fitting.",
+    "material": "Stainless steel",
+    "priceCents": 412000,
+    "imagePath": "/images/products/19.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-bmw-g20-b58-m340i-catted-downpipe",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 0,
+    "stockGrmagele": 1,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-020",
+    "title": "335i Gen 2 valved rear exhaust",
+    "brand": "Active Autowerke",
+    "category": "Axle-back exhausts",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "335i (F30)",
+        "yearFrom": 2012,
+        "yearTo": 2015,
+        "engine": "3.0 N55"
+      },
+      {
+        "make": "BMW",
+        "model": "435i (F32)",
+        "yearFrom": 2014,
+        "yearTo": 2016,
+        "engine": "3.0 N55"
+      }
+    ],
+    "description": "Gen 2 rear muffler assembly for N55-powered F3X models, with valved outlets and stainless pipework.",
+    "material": "Stainless steel",
+    "priceCents": 329500,
+    "imagePath": "/images/products/20.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-f3x-335i-435i-performance-valved-rear-exhaust",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 1,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-021",
+    "title": "340i Gen 2 valved rear exhaust",
+    "brand": "Active Autowerke",
+    "category": "Axle-back exhausts",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "340i (F30)",
+        "yearFrom": 2016,
+        "yearTo": 2018,
+        "engine": "3.0 B58"
+      },
+      {
+        "make": "BMW",
+        "model": "440i (F32)",
+        "yearFrom": 2017,
+        "yearTo": 2020,
+        "engine": "3.0 B58"
+      }
+    ],
+    "description": "A valved rear section for the first-generation F3X B58 cars. Match the outlet trim and rear bumper configuration before installation.",
+    "material": "Stainless steel",
+    "priceCents": 329500,
+    "imagePath": "/images/products/21.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-f3x-340i-440i-performance-valved-rear-exhaust-gen-2",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 2,
+    "stockGrmagele": 1,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-022",
+    "title": "N55 GESI catted downpipe",
+    "brand": "Active Autowerke",
+    "category": "Downpipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M235i (F22)",
+        "yearFrom": 2014,
+        "yearTo": 2016,
+        "engine": "3.0 N55"
+      },
+      {
+        "make": "BMW",
+        "model": "335i (F30)",
+        "yearFrom": 2014,
+        "yearTo": 2015,
+        "engine": "3.0 N55"
+      }
+    ],
+    "description": "A catted downpipe for supported N55 F-series models. Verify turbo flange style and production date with your installer.",
+    "material": "Stainless steel",
+    "priceCents": 412000,
+    "imagePath": "/images/products/22.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-bmw-n55-f3x-m235i-335i-435i-f87-m2-catted-downpipe",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 1,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-023",
+    "title": "X3 M / X4 M valved axle-back",
+    "brand": "Active Autowerke",
+    "category": "Axle-back exhausts",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "X3 M (F97)",
+        "yearFrom": 2020,
+        "yearTo": 2024,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "X4 M (F98)",
+        "yearFrom": 2020,
+        "yearTo": 2024,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "A rear exhaust section for S58-powered X3 M and X4 M models, with a valved layout and stainless finish.",
+    "material": "Stainless steel",
+    "priceCents": 687000,
+    "imagePath": "/images/products/23.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/x3m-and-x4m-valved-rear-axle-back-exhaust",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 0,
+    "stockGrmagele": 1,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-024",
+    "title": "X3 M single midpipe",
+    "brand": "Active Autowerke",
+    "category": "Midpipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "X3 M (F97)",
+        "yearFrom": 2020,
+        "yearTo": 2024,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "X4 M (F98)",
+        "yearFrom": 2020,
+        "yearTo": 2024,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "A single-pipe centre section for the F97/F98 platform. Match it with the correct rear exhaust connection.",
+    "material": "Stainless steel",
+    "priceCents": 329500,
+    "imagePath": "/images/products/24.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-x3m-x4m-signature-single-mid-pipe",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 2,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-025",
+    "title": "X3 M GESI catted downpipes",
+    "brand": "Active Autowerke",
+    "category": "Downpipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "X3 M (F97)",
+        "yearFrom": 2020,
+        "yearTo": 2024,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "X4 M (F98)",
+        "yearFrom": 2020,
+        "yearTo": 2024,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "Catted turbo outlet pipes for the S58-powered X3 M and X4 M. Confirm oxygen sensor routing before installation.",
+    "material": "Stainless steel",
+    "priceCents": 824500,
+    "imagePath": "/images/products/25.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-bmw-s58-f97-f98-x3m-x4m-downpipe-catted",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 1,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-026",
+    "title": "GR Corolla GESI catted downpipe",
+    "brand": "Active Autowerke",
+    "category": "Downpipes",
+    "fitments": [
+      {
+        "make": "Toyota",
+        "model": "GR Corolla",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "engine": "1.6 G16E-GTS"
+      }
+    ],
+    "description": "A high-flow catted downpipe for the turbocharged GR Corolla. Check the original exhaust connections before fitting.",
+    "material": "Stainless steel",
+    "priceCents": 522000,
+    "imagePath": "/images/products/26.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-toyota-corolla-gr-catted-downpipe",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 0,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-027",
+    "title": "Supra 3.0 GESI catted downpipe",
+    "brand": "Active Autowerke",
+    "category": "Downpipes",
+    "fitments": [
+      {
+        "make": "Toyota",
+        "model": "GR Supra 3.0 (A90)",
+        "yearFrom": 2020,
+        "yearTo": 2024,
+        "engine": "3.0 B58"
+      }
+    ],
+    "description": "Catted turbo outlet section for the 3.0-litre A90/A91 Supra. This listing covers the base configuration for the specified years.",
+    "material": "Stainless steel",
+    "priceCents": 412000,
+    "imagePath": "/images/products/27.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-toyota-supra-mkv-b58-catted-downpipe",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 1,
+    "stockGrmagele": 2,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-028",
+    "title": "Supra 2.0 GESI catted downpipe",
+    "brand": "Active Autowerke",
+    "category": "Downpipes",
+    "fitments": [
+      {
+        "make": "Toyota",
+        "model": "GR Supra 2.0 (A91)",
+        "yearFrom": 2021,
+        "yearTo": 2024,
+        "engine": "2.0 B46"
+      }
+    ],
+    "description": "A catted replacement downpipe for the four-cylinder GR Supra. This part is for the 2.0-litre car only.",
+    "material": "Stainless steel",
+    "priceCents": 412000,
+    "imagePath": "/images/products/28.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-toyota-supra-mkv-a91-2-0-catted-downpipe",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 2,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-029",
+    "title": "F-150 EcoBoost catted downpipes",
+    "brand": "Active Autowerke",
+    "category": "Downpipes",
+    "fitments": [
+      {
+        "make": "Ford",
+        "model": "F-150 EcoBoost",
+        "yearFrom": 2017,
+        "yearTo": 2020,
+        "engine": "3.5 V6"
+      }
+    ],
+    "description": "A catted downpipe assembly for the 3.5-litre EcoBoost F-150. Verify engine size and model year before installation.",
+    "material": "Stainless steel",
+    "priceCents": 742000,
+    "imagePath": "/images/products/29.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/2017-2020-ford-f-150-3-5l-ecoboost-gesi-epa-compliant-catted-downpipes",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 0,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-030",
+    "title": "E46 M3 catted Section 1",
+    "brand": "Active Autowerke",
+    "category": "Connecting pipes",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M3 (E46)",
+        "yearFrom": 2001,
+        "yearTo": 2006,
+        "engine": "3.2 S54"
+      }
+    ],
+    "description": "Replacement Section 1 pipework with high-flow catalysts for the E46 M3 exhaust layout.",
+    "material": "Stainless steel",
+    "priceCents": 632000,
+    "imagePath": "/images/products/30.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/bmw-e46-m3-exhaust-section-1-with-gesi-ultra-high-flow-catalysts",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 1,
+    "stockGrmagele": 1,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-031",
+    "title": "E9X M3 Gen 2 rear exhaust",
+    "brand": "Active Autowerke",
+    "category": "Axle-back exhausts",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M3 (E92)",
+        "yearFrom": 2008,
+        "yearTo": 2013,
+        "engine": "4.0 S65"
+      }
+    ],
+    "description": "Gen 2 rear exhaust assembly for the V8-powered E9X M3. Confirm the body-style-specific outlet configuration.",
+    "material": "Stainless steel",
+    "priceCents": 439500,
+    "imagePath": "/images/products/31.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-e9x-m3-signature-exhaust",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 1,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-032",
+    "title": "G8X underbody G-brace",
+    "brand": "Active Autowerke",
+    "category": "Fitting hardware",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (G82)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (G80)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "An underbody brace designed to provide clearance for compatible Active Autowerke G80/G82 midpipes.",
+    "material": "Metal chassis brace",
+    "priceCents": 82000,
+    "imagePath": "/images/products/32.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-g8x-chassis-brace-g-brace",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 4,
+    "stockGrmagele": 2,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-033",
+    "title": "F8X underbody F-brace",
+    "brand": "Active Autowerke",
+    "category": "Fitting hardware",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (F82)",
+        "yearFrom": 2015,
+        "yearTo": 2020,
+        "engine": "3.0 S55"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (F80)",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "engine": "3.0 S55"
+      },
+      {
+        "make": "BMW",
+        "model": "M2 Competition (F87)",
+        "yearFrom": 2019,
+        "yearTo": 2021,
+        "engine": "3.0 S55"
+      }
+    ],
+    "description": "A replacement underbody brace for compatible F8X midpipe installations. Match the brace to the selected exhaust layout.",
+    "material": "Metal chassis brace",
+    "priceCents": 27000,
+    "imagePath": "/images/products/33.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-f8x-chassis-brace",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 5,
+    "stockGrmagele": 3,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-034",
+    "title": "G8X Torca exhaust clamps",
+    "brand": "Active Autowerke",
+    "category": "Fitting hardware",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (G82)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (G80)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M2 (G87)",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "Replacement Torca clamps for compatible G8X exhaust joints. Check the required diameter and quantity for your installation.",
+    "material": "Stainless steel",
+    "priceCents": 19500,
+    "imagePath": "/images/products/34.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-exhaust-torca-clamps-g8x",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 8,
+    "stockGrmagele": 5,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-035",
+    "title": "F8X Torca exhaust clamps",
+    "brand": "Active Autowerke",
+    "category": "Fitting hardware",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (F82)",
+        "yearFrom": 2015,
+        "yearTo": 2020,
+        "engine": "3.0 S55"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (F80)",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "engine": "3.0 S55"
+      },
+      {
+        "make": "BMW",
+        "model": "M2 Competition (F87)",
+        "yearFrom": 2019,
+        "yearTo": 2021,
+        "engine": "3.0 S55"
+      }
+    ],
+    "description": "Replacement joint clamps for supported F8X exhaust pipework. Confirm the clamp size against the existing connection.",
+    "material": "Stainless steel",
+    "priceCents": 18000,
+    "imagePath": "/images/products/35.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/active-autowerke-exhaust-torca-clamps-f8x",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 6,
+    "stockGrmagele": 0,
+    "published": true,
+    "featured": false
+  },
+  {
+    "id": 0,
+    "sku": "EXT-036",
+    "title": "Exhaust valve cable extender",
+    "brand": "Active Autowerke",
+    "category": "Fitting hardware",
+    "fitments": [
+      {
+        "make": "BMW",
+        "model": "M4 (G82)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (G80)",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M2 (G87)",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "engine": "3.0 S58"
+      },
+      {
+        "make": "BMW",
+        "model": "M4 (F82)",
+        "yearFrom": 2015,
+        "yearTo": 2020,
+        "engine": "3.0 S55"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (F80)",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "engine": "3.0 S55"
+      },
+      {
+        "make": "BMW",
+        "model": "M2 Competition (F87)",
+        "yearFrom": 2019,
+        "yearTo": 2021,
+        "engine": "3.0 S55"
+      },
+      {
+        "make": "BMW",
+        "model": "X3 M (F97)",
+        "yearFrom": 2020,
+        "yearTo": 2024,
+        "engine": "3.0 S58"
+      }
+    ],
+    "description": "An extension lead for the exhaust valve wiring on supported BMW platforms. Useful when a rear exhaust changes the valve motor position.",
+    "material": "Insulated wiring harness",
+    "priceCents": 16000,
+    "imagePath": "/images/products/36.jpg",
+    "sourceUrl": "https://store.activeautowerke.com/products/f80-f82-f87-exhaust-valve-cable-extender",
+    "imageCredit": "Active Autowerke",
+    "stockGoodwill": 4,
+    "stockGrmagele": 3,
+    "published": true,
+    "featured": false
+  }
+]

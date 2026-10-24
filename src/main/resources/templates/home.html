@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head
+    th:replace="~{fragments :: head('Performance exhausts & parts')}"
+  ></head>
+  <body>
+    <header th:replace="~{fragments :: header}"></header>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>
+            <span th:each="line : ${heroLines}" th:text="${line}"
+              >Good cars.</span
+            >
+          </h1>
+          <p th:text="${heroDescription}">
+            Performance parts for your next drive.
+          </p>
+          <a class="button button-accent" th:href="@{/listings}"
+            >Find your next upgrade <svg class="icon"><use href="#arrow" /></svg
+          ></a>
+          <div class="hero-note">
+            <span class="small-dot"></span>Performance parts. Local pickup.
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img
+            th:src="${heroImage}"
+            alt="Rear three-quarter view of a BMW M4 G82, showing its quad exhaust tips"
+            width="1600"
+            height="1000"
+            fetchpriority="high"
+          /><span class="photo-caption">BMW M4 <span>G82 / S58</span></span>
+        </div>
+      </section>
+      <section
+        class="vehicle-finder container"
+        aria-label="Find parts for your car"
+      >
+        <div>
+          <h2>Your car. Your fit.</h2>
+          <p>Start with what you drive.</p>
+        </div>
+        <form
+          th:action="@{/listings}"
+          method="get"
+          class="finder-form"
+          data-vehicle-form
+        >
+          <label
+            >Car make<select name="make" data-make>
+              <option value="">All makes</option>
+              <option
+                th:each="entry : ${vehicles}"
+                th:value="${entry.key}"
+                th:text="${entry.key}"
+              ></option></select></label
+          ><label
+            >Car model<select name="model" data-model>
+              <option value="">All models</option>
+              <optgroup th:each="entry : ${vehicles}" th:label="${entry.key}">
+                <option
+                  th:each="model : ${entry.value}"
+                  th:value="${model}"
+                  th:text="${model}"
+                  th:attr="data-make=${entry.key}"
+                ></option>
+              </optgroup></select></label
+          ><label
+            >Model year<select name="year">
+              <option value="">All years</option>
+              <option
+                th:each="year : ${years}"
+                th:value="${year}"
+                th:text="${year}"
+              ></option></select></label
+          ><button class="button" type="submit">
+            Find parts <svg class="icon"><use href="#search" /></svg>
+          </button>
+        </form>
+      </section>
+      <section class="featured-section container">
+        <div class="section-heading">
+          <div>
+            <h2>Worth making noise about.</h2>
+            <p>A few picks from the parts shelf.</p>
+          </div>
+          <a class="text-link" th:href="@{/listings}"
+            >All <span th:text="${totalProducts}">36</span> parts
+            <svg class="icon"><use href="#arrow" /></svg
+          ></a>
+        </div>
+        <div class="product-grid featured-grid">
+          <th:block th:each="product : ${featured}"
+            ><article
+              th:replace="~{fragments :: productCard(${product})}"
+            ></article
+          ></th:block>
+        </div>
+        <div class="empty-state" th:if="${featured.isEmpty()}">
+          <h3>The shelf is getting a refresh.</h3>
+          <p>Check back soon for new parts.</p>
+        </div>
+      </section>
+      <section class="parts-banner container">
+        <div>
+          <h2>From the turbo<br />to the tailpipe.</h2>
+          <p>
+            Full systems or the finishing touch. Find what your build is
+            missing.
+          </p>
+        </div>
+        <div class="category-links">
+          <a th:href="@{/listings(category='Cat-back systems')}"
+            >Full exhaust systems <span aria-hidden="true">↗</span></a
+          ><a th:href="@{/listings(category='Midpipes')}"
+            >Midpipes &amp; crossovers <span aria-hidden="true">↗</span></a
+          ><a th:href="@{/listings(category='Downpipes')}"
+            >Downpipes <span aria-hidden="true">↗</span></a
+          ><a th:href="@{/listings(category='Exhaust tips')}"
+            >Tips &amp; finishing touches <span aria-hidden="true">↗</span></a
+          ><a th:href="@{/listings(category='Fitting hardware')}"
+            >Clamps, braces &amp; hardware <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section th:replace="~{fragments :: pickup}"></section>
+    </main>
+    <footer th:replace="~{fragments :: footer}"></footer>
+  </body>
+</html>

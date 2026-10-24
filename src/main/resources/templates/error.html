@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="~{fragments :: head('Something went off track')}"></head>
+  <body>
+    <header th:replace="~{fragments :: header}"></header>
+    <main id="main" class="container error-page">
+      <p class="error-code" th:text="${status}">404</p>
+      <h1
+        th:text="${status == 404 ? 'Nothing down this road.' : status == 403 ? 'This lane is restricted.' : status == 400 ? 'Check the details.' : 'A small pit stop.'}"
+      ></h1>
+      <p
+        th:text="${status == 404 ? 'This page or part could not be found. It may have been removed from the catalog.' : status == 400 ? 'One of the values in the request was not valid. Return to the catalog and try again.' : 'We couldn’t complete that request. Please go back and try again.'}"
+      ></p>
+      <a class="button" th:href="@{/listings}">Back to all parts →</a>
+    </main>
+    <footer th:replace="~{fragments :: footer}"></footer>
+  </body>
+</html>

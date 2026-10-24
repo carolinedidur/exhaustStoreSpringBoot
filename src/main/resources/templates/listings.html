@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="~{fragments :: head('All exhaust parts')}"></head>
+  <body>
+    <header th:replace="~{fragments :: header}"></header>
+    <main id="main" class="container catalog-page">
+      <div class="catalog-heading">
+        <div>
+          <h1>Find your next upgrade.</h1>
+          <p>Good parts. Clear fitment. Stock you can actually see.</p>
+        </div>
+        <span class="catalog-total"
+          ><strong th:text="${totalProducts}">36</strong> parts on the
+          shelf</span
+        >
+      </div>
+      <form
+        th:action="@{/listings}"
+        method="get"
+        class="catalog-layout"
+        data-vehicle-form
+      >
+        <details class="filter-panel" open>
+          <summary>Filter parts <span aria-hidden="true">+</span></summary>
+          <div class="filter-content">
+            <div class="filter-title">
+              <h2>Your filters</h2>
+              <a th:href="@{/listings}">Reset all</a>
+            </div>
+            <label
+              >Car make<select name="make" data-make>
+                <option value="">All makes</option>
+                <option
+                  th:each="entry : ${vehicles}"
+                  th:value="${entry.key}"
+                  th:text="${entry.key}"
+                  th:selected="${filter.make == entry.key}"
+                ></option></select
+            ></label>
+            <label
+              >Car model<select name="model" data-model>
+                <option value="">All models</option>
+                <optgroup th:each="entry : ${vehicles}" th:label="${entry.key}">
+                  <option
+                    th:each="model : ${entry.value}"
+                    th:value="${model}"
+                    th:text="${model}"
+                    th:selected="${filter.model == model}"
+                    th:attr="data-make=${entry.key}"
+                  ></option>
+                </optgroup></select
+            ></label>
+            <label
+              >Model year<select name="year">
+                <option value="">All years</option>
+                <option
+                  th:each="year : ${years}"
+                  th:value="${year}"
+                  th:text="${year}"
+                  th:selected="${filter.year == year}"
+                ></option></select
+            ></label>
+            <label
+              >Part type<select name="category">
+                <option value="">All parts</option>
+                <option
+                  th:each="category : ${categories}"
+                  th:value="${category}"
+                  th:text="${category}"
+                  th:selected="${filter.category == category}"
+                ></option></select
+            ></label>
+            <label
+              >Pickup point<select name="storage">
+                <option value="">Either location</option>
+                <option
+                  value="goodwill"
+                  th:selected="${filter.storage == 'goodwill'}"
+                >
+                  Goodwill, Didi Dighomi
+                </option>
+                <option
+                  value="grmagele"
+                  th:selected="${filter.storage == 'grmagele'}"
+                >
+                  Grmagele Metro
+                </option>
+              </select></label
+            >
+            <label
+              >Availability<select name="availability">
+                <option value="">All availability</option>
+                <option
+                  value="in-stock"
+                  th:selected="${filter.availability == 'in-stock'}"
+                >
+                  In stock
+                </option>
+                <option
+                  value="out-of-stock"
+                  th:selected="${filter.availability == 'out-of-stock'}"
+                >
+                  Out of stock
+                </option>
+              </select></label
+            >
+            <button class="button" type="submit">
+              Apply filters <svg class="icon"><use href="#arrow" /></svg>
+            </button>
+            <p class="filter-note">
+              Find your fit, then open a listing for stock at each pickup point.
+            </p>
+          </div>
+        </details>
+        <div class="catalog-results">
+          <div class="catalog-toolbar">
+            <label class="search-field"
+              ><span class="sr-only">Search parts</span
+              ><svg class="icon"><use href="#search" /></svg
+              ><input
+                type="search"
+                name="q"
+                th:value="${filter.q}"
+                placeholder="Search parts, brand or SKU" /><button
+                type="submit"
+                aria-label="Search parts"
+              >
+                <svg class="icon"><use href="#arrow" /></svg></button></label
+            ><label class="sort-field"
+              ><span>Sort by</span
+              ><select name="sort" data-auto-submit>
+                <option
+                  value="featured"
+                  th:selected="${filter.sort == '' || filter.sort == 'featured'}"
+                >
+                  Featured
+                </option>
+                <option value="newest" th:selected="${filter.sort == 'newest'}">
+                  Newest
+                </option>
+                <option
+                  value="price-low"
+                  th:selected="${filter.sort == 'price-low'}"
+                >
+                  Price: low to high
+                </option>
+                <option
+                  value="price-high"
+                  th:selected="${filter.sort == 'price-high'}"
+                >
+                  Price: high to low
+                </option>
+                <option value="name" th:selected="${filter.sort == 'name'}">
+                  Name: A–Z
+                </option>
+              </select></label
+            >
+          </div>
+          <div class="results-count" aria-live="polite">
+            <span
+              ><strong th:text="${products.size()}">36</strong>
+              <span th:text="${products.size() == 1 ? 'part' : 'parts'}"
+                >parts</span
+              >
+              found<span
+                th:if="${filter.make != ''}"
+                th:text="' for ' + ${filter.make}"
+              ></span></span
+            ><a th:if="${filter.active()}" th:href="@{/listings}"
+              >Clear filters ×</a
+            >
+          </div>
+          <div class="product-grid catalog-grid">
+            <th:block th:each="product : ${products}"
+              ><article
+                th:replace="~{fragments :: productCard(${product})}"
+              ></article
+            ></th:block>
+          </div>
+          <div class="empty-state" th:if="${products.isEmpty()}">
+            <svg class="icon"><use href="#search" /></svg>
+            <h2>No parts in this lane.</h2>
+            <p>
+              Try another model, year, or pickup point. You can also clear your
+              filters to see the whole shelf.
+            </p>
+            <a class="button" th:href="@{/listings}">Show all parts</a>
+          </div>
+          <p class="catalog-end" th:unless="${products.isEmpty()}">
+            You’ve reached the end of the shelf. Time for the next upgrade.
+          </p>
+        </div>
+      </form>
+    </main>
+    <footer th:replace="~{fragments :: footer}"></footer>
+  </body>
+</html>

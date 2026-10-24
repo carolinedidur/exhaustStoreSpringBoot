@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:fragment="head(title)">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f4f1" />
+    <meta
+      name="description"
+      content="Exhaust systems and performance parts in Tbilisi. Find the right part for your car and check stock at two pickup points."
+    />
+    <title th:text="${title} + ' — EXHAUST Tbilisi'">EXHAUST Tbilisi</title>
+    <link rel="icon" type="image/svg+xml" th:href="@{/images/favicon.svg}" />
+    <link rel="stylesheet" th:href="@{/css/store.css}" />
+    <script th:src="@{/js/store.js}" defer></script>
+  </head>
+  <body>
+    <header class="site-header" th:fragment="header">
+      <a class="skip-link" href="#main">Skip to content</a>
+      <svg
+        class="svg-defs"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <defs>
+          <symbol id="arrow" viewBox="0 0 24 24">
+            <path d="M4 12h15m-6-6 6 6-6 6" />
+          </symbol>
+          <symbol id="external" viewBox="0 0 24 24">
+            <path d="M6 18 18 6M6 6h12v12" />
+          </symbol>
+          <symbol id="pin" viewBox="0 0 24 24">
+            <path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z" />
+            <circle cx="12" cy="10" r="2.5" />
+          </symbol>
+          <symbol id="search" viewBox="0 0 24 24">
+            <circle cx="10.5" cy="10.5" r="6.5" />
+            <path d="m16 16 5 5" />
+          </symbol>
+          <symbol id="user" viewBox="0 0 24 24">
+            <circle cx="12" cy="7" r="4" />
+            <path d="M4 21v-2a8 8 0 0 1 16 0v2" />
+          </symbol>
+          <symbol id="check" viewBox="0 0 24 24">
+            <path d="m5 12 4 4L19 6" />
+          </symbol>
+        </defs>
+      </svg>
+      <div class="container header-inner">
+        <a class="wordmark" th:href="@{/}" aria-label="Exhaust Tbilisi home"
+          ><span class="brand-mark" aria-hidden="true"
+            ><i></i><i></i><i></i></span
+          ><span>EXHAUST<span class="brand-city">TBILISI</span></span></a
+        >
+        <nav aria-label="Main navigation">
+          <a
+            th:href="@{/}"
+            th:classappend="${page == 'home'} ? 'active'"
+            th:attr="aria-current=${page == 'home' ? 'page' : null}"
+            >Home</a
+          >
+          <a
+            th:href="@{/listings}"
+            th:classappend="${page == 'listings'} ? 'active'"
+            th:attr="aria-current=${page == 'listings' ? 'page' : null}"
+            >All parts</a
+          >
+          <a
+            th:href="@{/locations}"
+            th:classappend="${page == 'locations'} ? 'active'"
+            th:attr="aria-current=${page == 'locations' ? 'page' : null}"
+            >Pickup points</a
+          >
+        </nav>
+        <a class="admin-link" th:href="@{/admin}"
+          ><svg class="icon"><use href="#user" /></svg><span>Admin</span></a
+        >
+      </div>
+    </header>
+
+    <footer class="site-footer" th:fragment="footer">
+      <div class="container footer-top">
+        <a class="wordmark" th:href="@{/}"
+          ><span class="brand-mark" aria-hidden="true"
+            ><i></i><i></i><i></i></span
+          ><span>EXHAUST<span class="brand-city">TBILISI</span></span></a
+        >
+        <p>For the love of the drive.</p>
+        <div>
+          <a th:href="@{/listings}">Browse parts</a
+          ><a th:href="@{/locations}">Find us</a
+          ><a th:href="@{/admin}">Admin</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 EXHAUST Tbilisi · University demo</span
+        ><span
+          >Sample prices &amp; inventory ·
+          <a th:href="@{/credits}">Photo credits &amp; sources</a></span
+        >
+      </div>
+    </footer>
+
+    <article class="product-card" th:fragment="productCard(product)">
+      <a
+        class="product-image"
+        th:href="@{/listings/{id}(id=${product.id})}"
+        th:attr="aria-label=${product.title}"
+      >
+        <span
+          class="availability"
+          th:classappend="${!product.available()} ? 'unavailable'"
+          th:text="${product.available() ? 'In stock' : 'Out of stock'}"
+          >In stock</span
+        >
+        <img
+          th:src="${product.imagePath}"
+          th:alt="${product.title}"
+          width="600"
+          height="430"
+          loading="lazy"
+        />
+        <span class="image-arrow" aria-hidden="true"
+          ><svg class="icon"><use href="#external" /></svg
+        ></span>
+      </a>
+      <div class="product-copy">
+        <p class="product-category" th:text="${product.category}">
+          Exhaust system
+        </p>
+        <h3>
+          <a
+            th:href="@{/listings/{id}(id=${product.id})}"
+            th:text="${product.title}"
+            >Valved axle-back exhaust</a
+          >
+        </h3>
+        <p class="fitment-line">
+          <span th:text="${product.fitmentSummary()}">BMW M4 (G82)</span
+          ><span th:text="${product.yearSummary()}">2021–2026</span>
+        </p>
+        <div class="product-bottom">
+          <strong class="price" th:text="${product.formattedPrice()}"
+            >6,870 ₾</strong
+          ><span class="stock-locations" th:if="${product.available()}"
+            ><svg class="icon"><use href="#pin" /></svg
+            ><span
+              th:text="${product.stockGoodwill > 0 && product.stockGrmagele > 0 ? 'Both locations' : product.stockGoodwill > 0 ? 'Goodwill' : 'Grmagele'}"
+              >Goodwill</span
+            ></span
+          ><span class="stock-locations" th:unless="${product.available()}"
+            >Currently unavailable</span
+          >
+        </div>
+      </div>
+    </article>
+
+    <section class="pickup-section" th:fragment="pickup">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <h2>Two spots. Same passion.</h2>
+            <p>Find your part, check the stock, and pick your side of town.</p>
+          </div>
+          <a class="text-link" th:href="@{/locations}"
+            >Our pickup points <svg class="icon"><use href="#arrow" /></svg
+          ></a>
+        </div>
+        <div class="pickup-grid">
+          <div class="pickup-copy">
+            <div class="location-entry">
+              <svg class="icon"><use href="#pin" /></svg>
+              <div>
+                <h3>Goodwill, Didi Dighomi</h3>
+                <p>1 Parnavaz Mepe Avenue, Tbilisi</p>
+                <a th:href="@{/listings(storage='goodwill')}"
+                  >See parts at Goodwill <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+            <div class="location-entry">
+              <svg class="icon"><use href="#pin" /></svg>
+              <div>
+                <h3>Grmagele Metro Station</h3>
+                <p>Guramishvili Avenue, Tbilisi</p>
+                <a th:href="@{/listings(storage='grmagele')}"
+                  >See parts at Grmagele <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+            <p class="small-note">
+              Our unofficial pit stops. Yes, the metro one is a joke.
+            </p>
+          </div>
+          <iframe
+            class="map"
+            title="Google Maps: Goodwill Didi Dighomi pickup point"
+            src="https://maps.google.com/maps?q=Goodwill%20Didi%20Dighomi%201%20Parnavaz%20Mepe%20Tbilisi&amp;z=14&amp;output=embed"
+            width="700"
+            height="360"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <aside class="admin-sidebar" th:fragment="adminNav">
+      <a class="wordmark" th:href="@{/}"
+        ><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span
+        ><span>EXHAUST<span class="brand-city">ADMIN WORKSPACE</span></span></a
+      >
+      <nav aria-label="Admin navigation">
+        <a
+          th:href="@{/admin}"
+          th:classappend="${adminPage == 'listings'} ? 'selected'"
+          >Listings &amp; stock</a
+        ><a
+          th:href="@{/admin/landing}"
+          th:classappend="${adminPage == 'landing'} ? 'selected'"
+          >Landing page</a
+        ><a th:href="@{/}"
+          >View storefront <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+      <div class="admin-sidebar-bottom">
+        <p>Two pickup points.<br />One catalog to keep in tune.</p>
+        <form th:action="@{/logout}" method="post">
+          <button class="text-button" type="submit">Sign out →</button>
+        </form>
+      </div>
+    </aside>
+    <div th:fragment="flash">
+      <p
+        class="notice success"
+        role="status"
+        th:if="${success}"
+        th:text="${success}"
+      ></p>
+      <p
+        class="notice error"
+        role="alert"
+        th:if="${error}"
+        th:text="${error}"
+      ></p>
+    </div>
+  </body>
+</html>

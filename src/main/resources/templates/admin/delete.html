@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="~{fragments :: head('Delete listing')}"></head>
+  <body class="admin-body">
+    <div class="admin-shell">
+      <aside th:replace="~{fragments :: adminNav}"></aside>
+      <main id="main" class="admin-main">
+        <a class="back-link" th:href="@{/admin}">← All listings</a>
+        <section class="delete-confirm">
+          <h1>Delete this listing?</h1>
+          <div class="table-product">
+            <img
+              th:src="${product.imagePath}"
+              th:alt="${product.title}"
+              width="100"
+              height="80"
+            />
+            <div>
+              <strong th:text="${product.title}"></strong
+              ><span th:text="${product.sku}"></span>
+            </div>
+          </div>
+          <p>
+            This removes the listing and its car fitments from the catalog. You
+            can hide it instead if you want to keep it for later.
+          </p>
+          <div class="form-actions">
+            <a class="button button-outline" th:href="@{/admin}"
+              >Keep listing</a
+            >
+            <form
+              th:action="@{/admin/listings/{id}/delete(id=${product.id})}"
+              method="post"
+            >
+              <button class="button button-danger" type="submit">
+                Delete listing
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

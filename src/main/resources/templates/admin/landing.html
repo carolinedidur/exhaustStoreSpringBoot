@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="~{fragments :: head('Manage landing page')}"></head>
+  <body class="admin-body">
+    <div class="admin-shell">
+      <aside th:replace="~{fragments :: adminNav}"></aside>
+      <main id="main" class="admin-main editor-main">
+        <div class="admin-title">
+          <div>
+            <h1>Landing page</h1>
+            <p>
+              Set the first impression. Update the photo and the words beside
+              it.
+            </p>
+          </div>
+          <a class="text-link" th:href="@{/}">View home page ↗</a>
+        </div>
+        <div th:replace="~{fragments :: flash}"></div>
+        <form
+          th:action="@{/admin/landing}"
+          method="post"
+          enctype="multipart/form-data"
+          th:object="${form}"
+          class="landing-form"
+        >
+          <div
+            class="notice error"
+            role="alert"
+            th:if="${#fields.hasAnyErrors()}"
+          >
+            <strong>Please check the highlighted fields.</strong>
+            <ul>
+              <li
+                th:each="error : ${#fields.globalErrors()}"
+                th:text="${error}"
+              ></li>
+            </ul>
+          </div>
+          <div class="landing-settings">
+            <div class="form-section">
+              <h2>Hero photograph</h2>
+              <p>
+                A wide landscape photo works best. The current BMW G82 image is
+                included in the project.
+              </p>
+              <img
+                class="landing-preview"
+                th:src="${heroImage}"
+                alt="Current landing page photograph"
+                width="1000"
+                height="620"
+                data-image-preview
+              /><label
+                >Replace photograph<input
+                  type="file"
+                  name="image"
+                  accept="image/jpeg,image/png"
+                  data-image-input
+                /><span class="field-help"
+                  >JPG or PNG, up to 5 MB and 24 megapixels. Leave empty to keep
+                  this photo.</span
+                ></label
+              >
+            </div>
+            <div>
+              <section class="form-section">
+                <h2>Headline &amp; introduction</h2>
+                <label
+                  >Headline<textarea
+                    th:field="*{title}"
+                    rows="2"
+                    maxlength="80"
+                    required
+                  ></textarea
+                  ><span class="field-error" th:errors="*{title}"></span
+                  ><span class="field-help"
+                    >One or two short lines. A line break becomes a new line on
+                    the home page.</span
+                  ></label
+                ><label
+                  >Supporting text<textarea
+                    th:field="*{description}"
+                    rows="4"
+                    maxlength="220"
+                    required
+                  ></textarea
+                  ><span class="field-error" th:errors="*{description}"></span
+                ></label>
+              </section>
+              <section class="form-section">
+                <h2>Photograph credit</h2>
+                <label
+                  >Photographer / credit<input
+                    th:field="*{credit}"
+                    maxlength="200" /><span
+                    class="field-error"
+                    th:errors="*{credit}"
+                  ></span></label
+                ><label
+                  >Original photograph link<input
+                    type="url"
+                    th:field="*{source}"
+                    maxlength="1000" /><span
+                    class="field-error"
+                    th:errors="*{source}"
+                  ></span
+                ></label>
+                <p class="field-help">
+                  Credits appear on the public Photo credits &amp; sources page.
+                </p>
+              </section>
+            </div>
+          </div>
+          <div class="form-actions">
+            <a class="button button-outline" th:href="@{/admin}"
+              >Back to listings</a
+            ><button class="button" type="submit">Save landing page →</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

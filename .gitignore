@@ -1,0 +1,9 @@
+target/
+.env
+data/*
+!data/.gitkeep
+uploads/*
+!uploads/.gitkeep
+*.log
+.DS_Store
+.idea/

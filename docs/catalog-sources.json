@@ -1,0 +1,294 @@
+{
+  "researched": "2026-10-23",
+  "pricingNote": "Educational sample prices: reference USD multiplied by a fixed illustrative factor of 2.75, rounded to the nearest 5 GEL. This is not a live exchange rate or offer. Stock and pickup points are fictional.",
+  "products": [
+    {
+      "sku": "EXT-001",
+      "title": "Valved axle-back exhaust",
+      "source": "https://store.activeautowerke.com/products/g80-m3-and-g82-m4-valved-rear-axle-back-exhaust",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/G80EXHc.jpg?v=1636383773",
+      "referenceUsd": 2499,
+      "demoGel": 6870
+    },
+    {
+      "sku": "EXT-002",
+      "title": "Gen 2 equal-length midpipe",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-g80-g82-m3-m4-equal-length-mid-pipe-with-g-brace-and-90-fixed-price-shipping-in-lower-48-states",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/files/G80_EL_Gen_2_b.jpg?v=1723644728",
+      "referenceUsd": 1799,
+      "demoGel": 4945
+    },
+    {
+      "sku": "EXT-003",
+      "title": "Brushed quad exhaust tips",
+      "source": "https://store.activeautowerke.com/products/g8x-bmw-m3-m4-rear-exhaust-tips-for-active-exhausts",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/brshc_bcbcc8b0-fb42-4cb3-b09b-b73fe1abc7af.jpg?v=1656012697",
+      "referenceUsd": 399,
+      "demoGel": 1095
+    },
+    {
+      "sku": "EXT-004",
+      "title": "Supra performance cat-back",
+      "source": "https://store.activeautowerke.com/products/supra-performance-rear-exhaust-by-active-autowerke",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/1_cdff7960-8be8-4df2-8200-e3d6f2b56eef.jpg?v=1606857447",
+      "referenceUsd": 2199,
+      "demoGel": 6045
+    },
+    {
+      "sku": "EXT-005",
+      "title": "M2 valved axle-back",
+      "source": "https://store.activeautowerke.com/products/g87-m2-valved-rear-axle-back-exhaust",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/files/G80EXHc_60c771eb-d2ae-42ed-aa97-1bedc367bfa5.jpg?v=1691013839",
+      "referenceUsd": 2499,
+      "demoGel": 6870
+    },
+    {
+      "sku": "EXT-006",
+      "title": "M2 equal-length midpipe",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-g87-m2-signature-equal-length-mid-pipe-us-patent-11248511-uk-and-eu-patent-3882441-with-g-brace-and-90-fixed-price-shipping-in-lower-48-states",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/files/G87_EL_Gen_2_b.jpg?v=1723645887",
+      "referenceUsd": 1799,
+      "demoGel": 4945
+    },
+    {
+      "sku": "EXT-007",
+      "title": "Signature X-pipe midpipe",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-g80-g82-m3-m4-signature-mid-pipe-with-x-pipe",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/files/G80_xpipe_b.jpg?v=1738081509",
+      "referenceUsd": 1499,
+      "demoGel": 4120
+    },
+    {
+      "sku": "EXT-008",
+      "title": "Single midpipe + G-brace",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-g80-g82-m3-m4-sign",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/files/G80wdumpa.jpg?v=1712084168",
+      "referenceUsd": 1199,
+      "demoGel": 3295
+    },
+    {
+      "sku": "EXT-009",
+      "title": "S58 GESI catted downpipes",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-bmw-s58-g80-m3-g82-m4-downpipes-w-gesi-cat",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/G80Cata.jpg?v=1636145479",
+      "referenceUsd": 2999,
+      "demoGel": 8245
+    },
+    {
+      "sku": "EXT-010",
+      "title": "Maad Maxx valved rear exhaust",
+      "source": "https://store.activeautowerke.com/products/mad-max-f8x-bmw-m3-m4-rear-exhaust-section-3-can-valved-1",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/MadMax2.jpg?v=1606168295",
+      "referenceUsd": 2499,
+      "demoGel": 6870
+    },
+    {
+      "sku": "EXT-011",
+      "title": "F8X single midpipe + brace",
+      "source": "https://store.activeautowerke.com/products/f8x-bmw-m3-m4-mid-pipe",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/files/F80wdumpa_2d6dda69-fb70-4afe-a974-ec8427e4ebda.jpg?v=1712084301",
+      "referenceUsd": 799,
+      "demoGel": 2195
+    },
+    {
+      "sku": "EXT-012",
+      "title": "F8X equal-length connecting pipes",
+      "source": "https://store.activeautowerke.com/products/resonated-pipes-for-f8x-bmw-m3-m4-equal-length-mid-pipe",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/respipes2022.jpg?v=1654290175",
+      "referenceUsd": 299,
+      "demoGel": 820
+    },
+    {
+      "sku": "EXT-013",
+      "title": "F8X carbon exhaust tips",
+      "source": "https://store.activeautowerke.com/products/f8x-bmw-m3-m4-rear-exhaust-tips-for-active-exhausts",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/tipscarbona_3c5455f2-9d7e-493f-a1ab-5e5f2bccd4fe.png?v=1652476645",
+      "referenceUsd": 299,
+      "demoGel": 820
+    },
+    {
+      "sku": "EXT-014",
+      "title": "M2 Competition valved axle-back",
+      "source": "https://store.activeautowerke.com/products/m2c-valved-rear-exhaust-f87-bmw-m2c-rear-exhaust-section",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/m2cexh1.jpg?v=1607022978",
+      "referenceUsd": 2299,
+      "demoGel": 6320
+    },
+    {
+      "sku": "EXT-015",
+      "title": "M2 Competition midpipe",
+      "source": "https://store.activeautowerke.com/products/f87-bmw-m2-competition-mid-pipe",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/files/F80wdumpb.jpg?v=1712084209",
+      "referenceUsd": 799,
+      "demoGel": 2195
+    },
+    {
+      "sku": "EXT-016",
+      "title": "M2 carbon exhaust tips",
+      "source": "https://store.activeautowerke.com/products/f87-bmw-m2-and-m2c-rear-exhaust-tips-for-active-exhausts",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/tipscarbona_45d2ee3c-e1eb-4693-9251-822720bf66d7.png?v=1652476728",
+      "referenceUsd": 299,
+      "demoGel": 820
+    },
+    {
+      "sku": "EXT-017",
+      "title": "B58 valved axle-back exhaust",
+      "source": "https://store.activeautowerke.com/products/g2x-g3x-m340i-m440i-valved-rear-axle-back-exhaust",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/G340-440reare.jpg?v=1628284561",
+      "referenceUsd": 1999,
+      "demoGel": 5495
+    },
+    {
+      "sku": "EXT-018",
+      "title": "B58 midpipe + chassis brace",
+      "source": "https://store.activeautowerke.com/products/g2x-g3x-m340i-m440i-exhaust-midpipe",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/files/m340i4.jpg?v=1719257465",
+      "referenceUsd": 799,
+      "demoGel": 2195
+    },
+    {
+      "sku": "EXT-019",
+      "title": "B58 GESI catted downpipe",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-bmw-g20-b58-m340i-catted-downpipe",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/b58catbracket_143572d2-7ffe-40ae-91c3-fb620db08aeb.jpg?v=1592856219",
+      "referenceUsd": 1499,
+      "demoGel": 4120
+    },
+    {
+      "sku": "EXT-020",
+      "title": "335i Gen 2 valved rear exhaust",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-f3x-335i-435i-performance-valved-rear-exhaust",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/335g2.jpg?v=1677172051",
+      "referenceUsd": 1199,
+      "demoGel": 3295
+    },
+    {
+      "sku": "EXT-021",
+      "title": "340i Gen 2 valved rear exhaust",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-f3x-340i-440i-performance-valved-rear-exhaust-gen-2",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/files/335g2_5d523c2f-5949-4fee-babf-9593df1418e7.jpg?v=1682700289",
+      "referenceUsd": 1199,
+      "demoGel": 3295
+    },
+    {
+      "sku": "EXT-022",
+      "title": "N55 GESI catted downpipe",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-bmw-n55-f3x-m235i-335i-435i-f87-m2-catted-downpipe",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/a1.jpg?v=1741272009",
+      "referenceUsd": 1499,
+      "demoGel": 4120
+    },
+    {
+      "sku": "EXT-023",
+      "title": "X3 M / X4 M valved axle-back",
+      "source": "https://store.activeautowerke.com/products/x3m-and-x4m-valved-rear-axle-back-exhaust",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/x3mrearb.jpg?v=1663686561",
+      "referenceUsd": 2499,
+      "demoGel": 6870
+    },
+    {
+      "sku": "EXT-024",
+      "title": "X3 M single midpipe",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-x3m-x4m-signature-single-mid-pipe",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/x3mmida.jpg?v=1712084194",
+      "referenceUsd": 1199,
+      "demoGel": 3295
+    },
+    {
+      "sku": "EXT-025",
+      "title": "X3 M GESI catted downpipes",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-bmw-s58-f97-f98-x3m-x4m-downpipe-catted",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/S58NC1_4114cf55-1715-4e13-9101-0e8f83d44913.jpg?v=1601065098",
+      "referenceUsd": 2999,
+      "demoGel": 8245
+    },
+    {
+      "sku": "EXT-026",
+      "title": "GR Corolla GESI catted downpipe",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-toyota-corolla-gr-catted-downpipe",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/files/GRCOROLLA3.jpg?v=1715192113",
+      "referenceUsd": 1899,
+      "demoGel": 5220
+    },
+    {
+      "sku": "EXT-027",
+      "title": "Supra 3.0 GESI catted downpipe",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-toyota-supra-mkv-b58-catted-downpipe",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/b58catbracket_95cb1cee-8869-4b40-9a44-3983fa16e8f7.jpg?v=1592856250",
+      "referenceUsd": 1499,
+      "demoGel": 4120
+    },
+    {
+      "sku": "EXT-028",
+      "title": "Supra 2.0 GESI catted downpipe",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-toyota-supra-mkv-a91-2-0-catted-downpipe",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/B46DPCata.jpg?v=1626704045",
+      "referenceUsd": 1499,
+      "demoGel": 4120
+    },
+    {
+      "sku": "EXT-029",
+      "title": "F-150 EcoBoost catted downpipes",
+      "source": "https://store.activeautowerke.com/products/2017-2020-ford-f-150-3-5l-ecoboost-gesi-epa-compliant-catted-downpipes",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/files/F1503.5gesiafix.jpg?v=1772731097",
+      "referenceUsd": 2699,
+      "demoGel": 7420
+    },
+    {
+      "sku": "EXT-030",
+      "title": "E46 M3 catted Section 1",
+      "source": "https://store.activeautowerke.com/products/bmw-e46-m3-exhaust-section-1-with-gesi-ultra-high-flow-catalysts",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/double_pipe_4.jpg?v=1417732866",
+      "referenceUsd": 2299,
+      "demoGel": 6320
+    },
+    {
+      "sku": "EXT-031",
+      "title": "E9X M3 Gen 2 rear exhaust",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-e9x-m3-signature-exhaust",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/IMG_4989small.jpg?v=1475004928",
+      "referenceUsd": 1599,
+      "demoGel": 4395
+    },
+    {
+      "sku": "EXT-032",
+      "title": "G8X underbody G-brace",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-g8x-chassis-brace-g-brace",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/GBracea.jpg?v=1639084017",
+      "referenceUsd": 299,
+      "demoGel": 820
+    },
+    {
+      "sku": "EXT-033",
+      "title": "F8X underbody F-brace",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-f8x-chassis-brace",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/fbrace.jpg?v=1539724961",
+      "referenceUsd": 98,
+      "demoGel": 270
+    },
+    {
+      "sku": "EXT-034",
+      "title": "G8X Torca exhaust clamps",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-exhaust-torca-clamps-g8x",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/files/torca70.jpg?v=1700514477",
+      "referenceUsd": 70,
+      "demoGel": 195
+    },
+    {
+      "sku": "EXT-035",
+      "title": "F8X Torca exhaust clamps",
+      "source": "https://store.activeautowerke.com/products/active-autowerke-exhaust-torca-clamps-f8x",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/files/torca65.jpg?v=1700514308",
+      "referenceUsd": 65,
+      "demoGel": 180
+    },
+    {
+      "sku": "EXT-036",
+      "title": "Exhaust valve cable extender",
+      "source": "https://store.activeautowerke.com/products/f80-f82-f87-exhaust-valve-cable-extender",
+      "image": "https://cdn.shopify.com/s/files/1/0578/5357/products/CABLEEXT1.jpg?v=1601404608",
+      "referenceUsd": 59,
+      "demoGel": 160
+    }
+  ]
+}
